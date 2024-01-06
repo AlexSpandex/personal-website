@@ -1,38 +1,83 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: #0e0e16; 
+  color: #e0e0e0; 
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background: #242448; 
+  padding: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 20px;
+  color: #e06f8b; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 18px;
+  color: #39a9db; 
+}
+
+.portfolio-items, .contact-form, button, input, textarea {
+  border: 3px solid #39a9db; 
+  background: #242448; 
+  color: #e0e0e0;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.portfolio-item {
+  width: 160px;
+  height: 120px;
+  margin: 10px;
+  display: inline-block;
+  background: #312450; 
+  color: #e0e0e0;
+}
+
+form {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  background: #312450; 
+  color: #e0e0e0;
+}
+
+button {
+  background: #e06f8b; 
+  color: #242448; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #242448;
+  color: #e0e0e0;
+  padding: 20px 0;
+  font-size: 14px;
 }
