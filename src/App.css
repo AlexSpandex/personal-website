@@ -81,3 +81,30 @@ footer {
   padding: 20px 0;
   font-size: 14px;
 }
+
+/* Keyframes for the floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animation to the ghost image in the home section */
+#home img {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#home h2, #home p {
+  animation: fadeIn 2s ease-out;
+}
