@@ -1,6 +1,10 @@
 import React from 'react';
 import './App.css'; 
 import cuteGhost from './components/imgs/cute_ghost.png'; 
+import coolGhost1 from './components/imgs/cool_ghost1.png'; 
+import coolGhost2 from './components/imgs/cool_ghost2.png'; 
+import coolGhost3 from './components/imgs/cool_ghost3.png'; 
+import coolGhost4 from './components/imgs/cool_ghost4.png'; 
 
 function PortfolioItem({ title, description, imageUrl }) {
   return (
@@ -11,6 +15,7 @@ function PortfolioItem({ title, description, imageUrl }) {
     </div>
   );
 }
+
 const portfolioData = [
   {
     id: 1,
@@ -36,7 +41,13 @@ function App() {
         <section id="home">
           <h2>Home</h2>
           <p>Hello, I'm a web developer with a passion for 8-bit games!</p>
-          <img src={cuteGhost} alt="Ghost Boy" width="400" height="300"></img>
+          <div className="ghost-container">
+            <img src={coolGhost1} alt="Cool Ghost 1" className="cool-ghost" />
+            <img src={coolGhost2} alt="Cool Ghost 2" className="cool-ghost" />
+            <img src={cuteGhost} alt="Ghost Boy" className="cute-ghost" />
+            <img src={coolGhost3} alt="Cool Ghost 3" className="cool-ghost" />
+            <img src={coolGhost4} alt="Cool Ghost 4" className="cool-ghost" />
+          </div>        
         </section>
         <section id="portfolio">
           <h2>Portfolio</h2>

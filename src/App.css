@@ -1,5 +1,4 @@
 /* App.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body, html {
@@ -95,7 +94,7 @@ footer {
   }
 }
 
-/* Animation to the ghost image in the home section */
+/* Animation for the ghost image in the home section */
 #home img {
   animation: float 3s ease-in-out infinite;
 }
@@ -107,4 +106,46 @@ footer {
 
 #home h2, #home p {
   animation: fadeIn 2s ease-out;
+}
+
+/* Style for the container holding the ghost images */
+.ghost-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the cute ghost in the center */
+.cute-ghost {
+  width: 400px;
+  height: 300px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Style for the cool ghosts around the cute ghost */
+.cool-ghost {
+  position: absolute;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Position each cool ghost around the cute ghost */
+.ghost-container img:nth-child(1) { /* coolGhost1 */
+  top: 0px;
+  left: -400px;
+}
+
+.ghost-container img:nth-child(2) { /* coolGhost2 */
+  top: 0px;
+  right: -400px;
+}
+
+.ghost-container img:nth-child(4) { /* coolGhost3 */
+  bottom: 0px;
+  left: -200px;
+}
+
+.ghost-container img:nth-child(5) { /* coolGhost4 */
+  bottom: 00px;
+  right: -200px;
 }
